@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root {
+    --main-background : #b9d1d7;
+    --main-color : black;
+    --sencondry-background : #FFF;
+    --sencondry-color : #FFF;
+    --back-btn : #ff6139;
+    --back-link : #0095ff;
+}
+body {
+    background-color: var(--main-background);
+    display: flex;
+    justify-content: center;
+}
+body .container {
+    padding: 20px;
+    width: 800px;
+    margin-top: 50px;
+    background-color: var(--sencondry-background);
+    border-radius: 10px;
+}
+body .container .inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body .container .inputs input {
+    width: 80%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: var(--main-background);
+    border-radius: 5px;
+    font-size: 25px;
+    padding-left: 10px;
+}
+body .container .inputs button {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 17%;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: var(--back-btn);
+    border-radius: 5px;
+    padding: 10px;
+}
+body .container .outputs {
+    background-color: var(--main-background);
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+body .container .outputs .main-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+body .container .outputs div .repo-name {
+    background-color: var(--sencondry-background);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    flex-grow: 1;
+}
+body .container .outputs div.content {
+    text-align: center;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+body .container .outputs div.content a,
+body .container .outputs div.content p{
+    width: 45%;
+    background-color: var(--back-btn);
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--sencondry-color);
+    padding: 10px;
+    border-radius: 5px;
+}
+body .container .outputs div.content p {
+    color: var(--main-color);
+    background-color: var(--back-link);
+    font-size: 15px;
+    width: 70%;
+}
